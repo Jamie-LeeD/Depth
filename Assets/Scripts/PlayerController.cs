@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
     {
         xMovement = Input.GetAxisRaw("Horizontal");
         zMovement = Input.GetAxisRaw("Vertical");
-        pressingJump = Input.GetAxisRaw("Jump") > 0f;
+        pressingJump = Input.GetAxisRaw("Jump") > 0.1f;
 
         moveDirection = (orientation.forward * zMovement + orientation.right * xMovement).normalized;
         slopeMoveDirection = Vector3.ProjectOnPlane(moveDirection, slopeHit.normal);
@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour
             {
                 rb.AddForce(moveDirection * (movementSpeed * MOVEMENT_MULTIPLIER), ForceMode.Acceleration);
             }
-            if (isGrounded)
+            if (pressingJump)
             {
                 rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
                 rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
