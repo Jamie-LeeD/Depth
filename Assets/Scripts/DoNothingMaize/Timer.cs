@@ -17,7 +17,7 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(currentTimer);
+        //Debug.Log(currentTimer);
         if (Input.anyKey && !timerEnd)
         {
             ResetTimer();

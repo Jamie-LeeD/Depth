@@ -18,7 +18,6 @@ public class Ground : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     private void OnTriggerExit(Collider other)
@@ -27,6 +26,6 @@ public class Ground : MonoBehaviour
         {
             groundspawner.spawnGround();
             Destroy(gameObject);
-        }  
+        }
     }
 }
