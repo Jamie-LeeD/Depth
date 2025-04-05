@@ -3,8 +3,7 @@ using UnityEngine;
 public class Ground : MonoBehaviour
 {
     private GroundSpawner groundspawner;
-
-
+    
     private void Awake()
     {
         groundspawner = GameObject.FindFirstObjectByType<GroundSpawner>();
@@ -25,6 +24,6 @@ public class Ground : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         groundspawner.spawnGround();
-        //Destroy(gameObject, 10f);
+        Destroy(gameObject);
     }
 }
