@@ -174,7 +174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 418571633}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Camera Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -685,7 +685,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 846793809}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b4fed2deb5b7ae04790142317568bd7d, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -781,7 +781,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 846793809}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d994241d848dc984eae44b614d3f7c6d, type: 3}
+  m_Script: {fileID: 11500000, guid: 5372cc13e10475f48a03a03064b652e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 650596417}

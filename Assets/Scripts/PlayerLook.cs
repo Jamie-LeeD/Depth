@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class PlayerLook : MonoBehaviour
 {
     [SerializeField]
     Camera cam;
@@ -18,23 +18,26 @@ public class CameraController : MonoBehaviour
     float maxXRotation;
 
     const float MULTIPLIER = 0.01f;
-    
+
+    float yRotation;
+    float xRotation;
+
     void Start()
     {
         DisableCursor();
     }
-    
+
     void Update()
     {
         float mouseX = Input.GetAxisRaw("Mouse X");
         float mouseY = Input.GetAxisRaw("Mouse Y");
 
-        float yRotation = mouseX * sensX * MULTIPLIER;
-        float xRotation = mouseY * sensY * MULTIPLIER;
+        yRotation += mouseX * sensX * MULTIPLIER;
+        xRotation -= mouseY * sensY * MULTIPLIER;
         xRotation = Mathf.Clamp(xRotation, minXRotation, maxXRotation);
 
-        cam.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        orientation.rotation = Quaternion.Euler(0f, yRotation, 0f);
+        cam.transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
+        orientation.transform.rotation = Quaternion.Euler(0f, yRotation, 0f);
     }
 
     public void DisableCursor()
