@@ -3,7 +3,6 @@ using UnityEngine;
 public class GroundSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject ground;
-
     private Vector3 nextSpawn;
 
     public void spawnGround()
@@ -14,6 +13,10 @@ public class GroundSpawner : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        spawnGround();       
+        spawnGround();     
+    }
+
+    private void Update()
+    {       
     }
 }

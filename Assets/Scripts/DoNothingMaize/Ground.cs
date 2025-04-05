@@ -23,7 +23,10 @@ public class Ground : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        groundspawner.spawnGround();
-        Destroy(gameObject);
+        if (!Timer.timerEnd)
+        {
+            groundspawner.spawnGround();
+            Destroy(gameObject);
+        }  
     }
 }
