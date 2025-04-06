@@ -67,8 +67,8 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueBox.fontStyle = FontStyles.Italic;
         }
-        backgroundImage.sprite = dialogueList[currentDialogue].backgroundImage.sprite;
-        speakerImage.sprite = dialogueList[currentDialogue].speakerImage.sprite;
+        backgroundImage.sprite = dialogueList[currentDialogue].backgroundImage?.sprite;
+        speakerImage.sprite = dialogueList[currentDialogue].speakerImage?.sprite;
         speakerBox.text = dialogueList[currentDialogue].speaker;
         Array.ForEach<string>(dialogueList[currentDialogue].tags.ToArray(), t => tagBox.text += $"{t}, ");
         if (tagBox.text != "(")
