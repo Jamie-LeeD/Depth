@@ -3,13 +3,16 @@ using UnityEngine;
 public class CloseEyes : MonoBehaviour
 {
     [SerializeField]
-    GameObject eyelids;
+    GameObject eyelidsClosed;
+    [SerializeField]
+    GameObject eyelidsOpened;
 
     bool closed;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F)) closed = !closed;
-        eyelids.SetActive(closed);
+        eyelidsClosed.SetActive(closed);
+        eyelidsOpened.SetActive(!closed);
     }
 }
