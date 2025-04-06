@@ -601,6 +601,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5fb5a654df2dae4b9aaad159db403a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextDialogueButton: {fileID: 0}
+  backgroundImage: {fileID: 0}
+  speakerImage: {fileID: 0}
+  speakerBox: {fileID: 0}
+  tagBox: {fileID: 0}
   dialogueBox: {fileID: 93483442}
   dialogueList:
   - title: Psychologist Line 1

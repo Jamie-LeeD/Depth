@@ -1,27 +1,45 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    [SerializeField]
+    Button nextDialogueButton;
+    [SerializeField]
+    Image backgroundImage;
+    [SerializeField]
+    Image speakerImage;
+    [SerializeField]
+    TextMeshProUGUI speakerBox;
+    [SerializeField]
+    TextMeshProUGUI tagBox;
     [SerializeField]
     TextMeshProUGUI dialogueBox;
     [SerializeField]
     List<Dialogue> dialogueList = new List<Dialogue>();
 
-    int currentDialogue;
+    int currentDialogue = -1;
     int textIndex;
     float readTime;
 
     void Awake()
     {
-        ChangeDialogue(1);
+        NextDialogue();
+        nextDialogueButton.onClick.AddListener(NextDialogue);
     }
 
     void Update()
     {
         readTime += Time.deltaTime;
-        if (textIndex >= dialogueList[currentDialogue].text.Length) return;
+        if (textIndex >= dialogueList[currentDialogue].text.Length)
+        {
+            nextDialogueButton.enabled = true;
+            return;
+        }
+        nextDialogueButton.enabled = false;
         if (readTime < 1f / dialogueList[currentDialogue].charactersPerSecond) return;
         int characters = (int)(readTime * dialogueList[currentDialogue].charactersPerSecond);
         readTime = 0f;
@@ -33,10 +51,11 @@ public class DialogueManager : MonoBehaviour
         }
     }
     
-    public void ChangeDialogue(int dialogueNumber)
+    public void NextDialogue()
     {
         dialogueBox.text = "";
-        currentDialogue = dialogueNumber;
+        tagBox.text = "(";
+        currentDialogue++;
         textIndex = 0;
         readTime = 0f;
         dialogueBox.fontSize = dialogueList[currentDialogue].fontSize;
@@ -47,6 +66,19 @@ public class DialogueManager : MonoBehaviour
         else if (dialogueList[currentDialogue].type == Dialogue.Type.Action)
         {
             dialogueBox.fontStyle = FontStyles.Italic;
+        }
+        backgroundImage.sprite = dialogueList[currentDialogue].backgroundImage.sprite;
+        speakerImage.sprite = dialogueList[currentDialogue].speakerImage.sprite;
+        speakerBox.text = dialogueList[currentDialogue].speaker;
+        Array.ForEach<string>(dialogueList[currentDialogue].tags.ToArray(), t => tagBox.text += $"{t}, ");
+        if (tagBox.text != "(")
+        {
+            tagBox.text = tagBox.text.Substring(0, tagBox.text.Length - 2);
+            tagBox.text += ")";
+        }
+        else
+        {
+            tagBox.text = "";
         }
     }
 }
