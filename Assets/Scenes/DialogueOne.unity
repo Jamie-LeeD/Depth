@@ -602,7 +602,120 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 93483442}
-  dialogueList: []
+  dialogueList:
+  - title: Psychologist Line 1
+    type: 0
+    backgroundImage: {fileID: 0}
+    speaker: PSYCHOLOGIST
+    speakerImage: {fileID: 0}
+    tags:
+    - thinking out loud
+    - hesitant
+    text: '"I''ve treated patients like this... but I''ve never truly understood
+      the labyrinth of their mind."'
+    charactersPerSecond: 20
+    fontSize: 20
+  - title: Action 1
+    type: 1
+    backgroundImage: {fileID: 0}
+    speaker: 
+    speakerImage: {fileID: 0}
+    tags: []
+    text: The patient grins, eyes gleaming in the flickering fluorescent light.
+    charactersPerSecond: 40
+    fontSize: 20
+  - title: Patient Line 1
+    type: 0
+    backgroundImage: {fileID: 0}
+    speaker: PATIENT
+    speakerImage: {fileID: 0}
+    tags:
+    - mocking
+    - whispering
+    text: '"You want to see the depths of my mind?"'
+    charactersPerSecond: 20
+    fontSize: 20
+  - title: Action 2
+    type: 1
+    backgroundImage: {fileID: 0}
+    speaker: 
+    speakerImage: {fileID: 0}
+    tags: []
+    text: The psychologist stiffens. She never spoke aloud. She leans forward, intrigued
+      yet wary.
+    charactersPerSecond: 40
+    fontSize: 20
+  - title: Psychologist Line 2
+    type: 0
+    backgroundImage: {fileID: 0}
+    speaker: PSYCHOLOGIST
+    speakerImage: {fileID: 0}
+    tags:
+    - soft
+    - curious
+    text: '"How did you hear that? Yes... I want to understand."'
+    charactersPerSecond: 20
+    fontSize: 20
+  - title: Action 3
+    type: 1
+    backgroundImage: {fileID: 0}
+    speaker: 
+    speakerImage: {fileID: 0}
+    tags: []
+    text: The patient tilts her head, skin stretching over her bones like a mask.
+    charactersPerSecond: 40
+    fontSize: 20
+  - title: Patient Line 2
+    type: 0
+    backgroundImage: {fileID: 0}
+    speaker: PATIENT
+    speakerImage: {fileID: 0}
+    tags:
+    - smiling
+    - voice echoing unnaturally
+    text: '"Come... take a closer look."'
+    charactersPerSecond: 20
+    fontSize: 20
+  - title: Action 4
+    type: 1
+    backgroundImage: {fileID: 0}
+    speaker: 
+    speakerImage: {fileID: 0}
+    tags: []
+    text: A whisper slithers through the air.
+    charactersPerSecond: 40
+    fontSize: 20
+  - title: Patient Line 3
+    type: 0
+    backgroundImage: {fileID: 0}
+    speaker: PATIENT
+    speakerImage: {fileID: 0}
+    tags:
+    - whispering from everywhere
+    - nowhere
+    text: 
+    charactersPerSecond: 20
+    fontSize: 20
+  - title: Action 5
+    type: 1
+    backgroundImage: {fileID: 0}
+    speaker: 
+    speakerImage: {fileID: 0}
+    tags: []
+    text: "The psychologist stands\u2014her breath fogs against an invisible surface.
+      She touches it. A mirror? No. Her reflection is twisted\u2014her face scarred
+      like the patient\u2019s. The whispers turn to laughter."
+    charactersPerSecond: 40
+    fontSize: 20
+  - title: Action 6
+    type: 1
+    backgroundImage: {fileID: 0}
+    speaker: 
+    speakerImage: {fileID: 0}
+    tags: []
+    text: "She turns back to the chair\u2014HER OWN BODY SITS THERE, expression\_blank."
+    charactersPerSecond: 40
+    fontSize: 20
 --- !u!1 &1214665279
 GameObject:
   m_ObjectHideFlags: 0

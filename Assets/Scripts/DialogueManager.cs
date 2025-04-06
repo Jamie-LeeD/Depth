@@ -13,12 +13,17 @@ public class DialogueManager : MonoBehaviour
     int textIndex;
     float readTime;
 
+    void Awake()
+    {
+        ChangeDialogue(1);
+    }
+
     void Update()
     {
         readTime += Time.deltaTime;
         if (textIndex >= dialogueList[currentDialogue].text.Length) return;
-        if (readTime < dialogueList[currentDialogue].charactersPerSecond) return;
-        int characters = (int)(readTime / dialogueList[currentDialogue].charactersPerSecond);
+        if (readTime < 1f / dialogueList[currentDialogue].charactersPerSecond) return;
+        int characters = (int)(readTime * dialogueList[currentDialogue].charactersPerSecond);
         readTime = 0f;
         for (int i = 0; i < characters; i++)
         {
@@ -34,5 +39,14 @@ public class DialogueManager : MonoBehaviour
         currentDialogue = dialogueNumber;
         textIndex = 0;
         readTime = 0f;
+        dialogueBox.fontSize = dialogueList[currentDialogue].fontSize;
+        if (dialogueList[currentDialogue].type == Dialogue.Type.Speaking)
+        {
+            dialogueBox.fontStyle = FontStyles.Normal;
+        }
+        else if (dialogueList[currentDialogue].type == Dialogue.Type.Action)
+        {
+            dialogueBox.fontStyle = FontStyles.Italic;
+        }
     }
 }
