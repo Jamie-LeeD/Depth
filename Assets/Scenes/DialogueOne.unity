@@ -119,6 +119,85 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &43014991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 43014992}
+  - component: {fileID: 43014994}
+  - component: {fileID: 43014993}
+  m_Layer: 5
+  m_Name: Dialogue Box
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &43014992
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43014991}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1434040515}
+  - {fileID: 992586099}
+  - {fileID: 93483441}
+  - {fileID: 1544304944}
+  m_Father: {fileID: 1052793328}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 91, y: -126}
+  m_SizeDelta: {x: 682, y: 249}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &43014993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43014991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 928531af2c773b042974142e9e3b38f8, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &43014994
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43014991}
+  m_CullTransparentMesh: 1
 --- !u!1 &93483440
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,7 +210,7 @@ GameObject:
   - component: {fileID: 93483443}
   - component: {fileID: 93483442}
   m_Layer: 5
-  m_Name: Dialogue Box
+  m_Name: Dialogue Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,16 +223,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 93483440}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 809616317}
+  m_Father: {fileID: 43014992}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -152, y: -19}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &93483442
@@ -185,8 +264,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -203,8 +282,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -241,7 +320,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 4.9703293, y: 0, z: -325.9151, w: -6.436608}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -549,12 +628,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1544304944}
   - {fileID: 851409869}
-  - {fileID: 842288890}
-  - {fileID: 1434040515}
-  - {fileID: 992586099}
-  - {fileID: 93483441}
+  - {fileID: 1052793328}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -609,15 +684,15 @@ MonoBehaviour:
   nextDialogueButton: {fileID: 1544304945}
   backgroundImage: {fileID: 851409870}
   speakerImage: {fileID: 842288891}
-  speakerBox: {fileID: 1434040516}
-  tagBox: {fileID: 992586100}
-  dialogueBox: {fileID: 93483442}
+  speakerName: {fileID: 1434040516}
+  dialogueTags: {fileID: 992586100}
+  dialogueText: {fileID: 93483442}
   dialogueList:
   - title: Psychologist Line 1
     type: 0
-    backgroundImage: {fileID: 0}
+    backgroundImage: {fileID: 21300000, guid: 79e85c2edb26f6742a4697959caa97d5, type: 3}
     speaker: PSYCHOLOGIST
-    speakerImage: {fileID: 0}
+    speakerImage: {fileID: 21300000, guid: ea19c039363094a4598dcd881c89aae6, type: 3}
     tags:
     - thinking out loud
     - hesitant
@@ -627,18 +702,18 @@ MonoBehaviour:
     fontSize: 20
   - title: Action 1
     type: 1
-    backgroundImage: {fileID: 0}
+    backgroundImage: {fileID: 21300000, guid: 79e85c2edb26f6742a4697959caa97d5, type: 3}
     speaker: 
-    speakerImage: {fileID: 0}
+    speakerImage: {fileID: 21300000, guid: 44751ff65d7aa6a4e8924ccfd47332b9, type: 3}
     tags: []
     text: The patient grins, eyes gleaming in the flickering fluorescent light.
     charactersPerSecond: 40
     fontSize: 20
   - title: Patient Line 1
     type: 0
-    backgroundImage: {fileID: 0}
+    backgroundImage: {fileID: 21300000, guid: 79e85c2edb26f6742a4697959caa97d5, type: 3}
     speaker: PATIENT
-    speakerImage: {fileID: 0}
+    speakerImage: {fileID: 21300000, guid: 1c4fce8704d7f5149925c48ada60148b, type: 3}
     tags:
     - mocking
     - whispering
@@ -647,9 +722,9 @@ MonoBehaviour:
     fontSize: 20
   - title: Action 2
     type: 1
-    backgroundImage: {fileID: 0}
+    backgroundImage: {fileID: 21300000, guid: 79e85c2edb26f6742a4697959caa97d5, type: 3}
     speaker: 
-    speakerImage: {fileID: 0}
+    speakerImage: {fileID: 21300000, guid: 44751ff65d7aa6a4e8924ccfd47332b9, type: 3}
     tags: []
     text: The psychologist stiffens. She never spoke aloud. She leans forward, intrigued
       yet wary.
@@ -657,9 +732,9 @@ MonoBehaviour:
     fontSize: 20
   - title: Psychologist Line 2
     type: 0
-    backgroundImage: {fileID: 0}
+    backgroundImage: {fileID: 21300000, guid: 79e85c2edb26f6742a4697959caa97d5, type: 3}
     speaker: PSYCHOLOGIST
-    speakerImage: {fileID: 0}
+    speakerImage: {fileID: 21300000, guid: ea19c039363094a4598dcd881c89aae6, type: 3}
     tags:
     - soft
     - curious
@@ -668,18 +743,18 @@ MonoBehaviour:
     fontSize: 20
   - title: Action 3
     type: 1
-    backgroundImage: {fileID: 0}
+    backgroundImage: {fileID: 21300000, guid: 79e85c2edb26f6742a4697959caa97d5, type: 3}
     speaker: 
-    speakerImage: {fileID: 0}
+    speakerImage: {fileID: 21300000, guid: 44751ff65d7aa6a4e8924ccfd47332b9, type: 3}
     tags: []
     text: The patient tilts her head, skin stretching over her bones like a mask.
     charactersPerSecond: 40
     fontSize: 20
   - title: Patient Line 2
     type: 0
-    backgroundImage: {fileID: 0}
+    backgroundImage: {fileID: 21300000, guid: 06ea16363450e70428ae92a8b29b67fe, type: 3}
     speaker: PATIENT
-    speakerImage: {fileID: 0}
+    speakerImage: {fileID: 21300000, guid: 1c4fce8704d7f5149925c48ada60148b, type: 3}
     tags:
     - smiling
     - voice echoing unnaturally
@@ -688,18 +763,18 @@ MonoBehaviour:
     fontSize: 20
   - title: Action 4
     type: 1
-    backgroundImage: {fileID: 0}
+    backgroundImage: {fileID: 21300000, guid: 06ea16363450e70428ae92a8b29b67fe, type: 3}
     speaker: 
-    speakerImage: {fileID: 0}
+    speakerImage: {fileID: 21300000, guid: 44751ff65d7aa6a4e8924ccfd47332b9, type: 3}
     tags: []
     text: A whisper slithers through the air.
     charactersPerSecond: 40
     fontSize: 20
   - title: Patient Line 3
     type: 0
-    backgroundImage: {fileID: 0}
+    backgroundImage: {fileID: 21300000, guid: 06ea16363450e70428ae92a8b29b67fe, type: 3}
     speaker: PATIENT
-    speakerImage: {fileID: 0}
+    speakerImage: {fileID: 21300000, guid: 1c4fce8704d7f5149925c48ada60148b, type: 3}
     tags:
     - whispering from everywhere
     - nowhere
@@ -708,20 +783,38 @@ MonoBehaviour:
     fontSize: 20
   - title: Action 5
     type: 1
-    backgroundImage: {fileID: 0}
+    backgroundImage: {fileID: 21300000, guid: a46895c29fd2f75438ed53453b7e596c, type: 3}
     speaker: 
-    speakerImage: {fileID: 0}
+    speakerImage: {fileID: 21300000, guid: 44751ff65d7aa6a4e8924ccfd47332b9, type: 3}
     tags: []
     text: "The psychologist stands\u2014her breath fogs against an invisible surface.
-      She touches it. A mirror? No. Her reflection is twisted\u2014her face scarred
-      like the patient\u2019s. The whispers turn to laughter."
+      She touches it."
     charactersPerSecond: 40
     fontSize: 20
   - title: Action 6
     type: 1
-    backgroundImage: {fileID: 0}
+    backgroundImage: {fileID: 21300000, guid: a46895c29fd2f75438ed53453b7e596c, type: 3}
     speaker: 
-    speakerImage: {fileID: 0}
+    speakerImage: {fileID: 21300000, guid: 44751ff65d7aa6a4e8924ccfd47332b9, type: 3}
+    tags: []
+    text: "A mirror? No. Her reflection is twisted\u2014her face scarred like the
+      patient\u2019s."
+    charactersPerSecond: 40
+    fontSize: 20
+  - title: Action 7
+    type: 1
+    backgroundImage: {fileID: 21300000, guid: a46895c29fd2f75438ed53453b7e596c, type: 3}
+    speaker: 
+    speakerImage: {fileID: 21300000, guid: 44751ff65d7aa6a4e8924ccfd47332b9, type: 3}
+    tags: []
+    text: The whispers turn to laughter.
+    charactersPerSecond: 40
+    fontSize: 20
+  - title: Action 8
+    type: 1
+    backgroundImage: {fileID: 21300000, guid: a46895c29fd2f75438ed53453b7e596c, type: 3}
+    speaker: 
+    speakerImage: {fileID: 21300000, guid: 44751ff65d7aa6a4e8924ccfd47332b9, type: 3}
     tags: []
     text: "She turns back to the chair\u2014HER OWN BODY SITS THERE, expression\_blank."
     charactersPerSecond: 40
@@ -751,17 +844,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842288889}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 809616317}
+  m_Father: {fileID: 1052793328}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -301, y: -126}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &842288891
 MonoBehaviour:
@@ -836,7 +929,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 800, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &851409870
 MonoBehaviour:
@@ -888,7 +981,7 @@ GameObject:
   - component: {fileID: 992586101}
   - component: {fileID: 992586100}
   m_Layer: 5
-  m_Name: Tag Box
+  m_Name: Dialogue Tags
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -901,16 +994,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 992586098}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 809616317}
+  m_Father: {fileID: 43014992}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 50.8, y: 21}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &992586100
@@ -942,8 +1035,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -960,8 +1053,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -998,7 +1091,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -122.80778, w: 14.54402}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1012,6 +1105,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 992586098}
   m_CullTransparentMesh: 1
+--- !u!1 &1052793327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1052793328}
+  m_Layer: 5
+  m_Name: Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1052793328
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052793327}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 842288890}
+  - {fileID: 43014992}
+  m_Father: {fileID: 809616317}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1152067280
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,7 +1199,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: NEXT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1102,7 +1232,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1252,7 +1382,7 @@ GameObject:
   - component: {fileID: 1434040517}
   - component: {fileID: 1434040516}
   m_Layer: 5
-  m_Name: Speaker Box
+  m_Name: Speaker Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1265,16 +1395,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434040514}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 809616317}
+  m_Father: {fileID: 43014992}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -148, y: 21}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1434040516
@@ -1306,8 +1436,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1324,14 +1454,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_fontStyle: 1
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1362,7 +1492,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 24.631126, w: 23.249361}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1402,17 +1532,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544304943}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1152067281}
-  m_Father: {fileID: 809616317}
+  m_Father: {fileID: 43014992}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 189, y: -66}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1544304945
@@ -1441,7 +1571,7 @@ MonoBehaviour:
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
+    m_ColorMultiplier: 5
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}

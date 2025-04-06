@@ -10,9 +10,9 @@ public class Dialogue
 
     public string title;
     public Type type;
-    public UnityEngine.UI.Image backgroundImage;
+    public UnityEngine.Sprite backgroundImage;
     public string speaker;
-    public UnityEngine.UI.Image speakerImage;
+    public UnityEngine.Sprite speakerImage;
     public System.Collections.Generic.List<string> tags = new System.Collections.Generic.List<string>();
     [UnityEngine.TextArea]
     public string text;

@@ -13,11 +13,11 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     Image speakerImage;
     [SerializeField]
-    TextMeshProUGUI speakerBox;
+    TextMeshProUGUI speakerName;
     [SerializeField]
-    TextMeshProUGUI tagBox;
+    TextMeshProUGUI dialogueTags;
     [SerializeField]
-    TextMeshProUGUI dialogueBox;
+    TextMeshProUGUI dialogueText;
     [SerializeField]
     List<Dialogue> dialogueList = new List<Dialogue>();
 
@@ -36,49 +36,59 @@ public class DialogueManager : MonoBehaviour
         readTime += Time.deltaTime;
         if (textIndex >= dialogueList[currentDialogue].text.Length)
         {
-            nextDialogueButton.enabled = true;
+            nextDialogueButton.gameObject.SetActive(true);
             return;
         }
-        nextDialogueButton.enabled = false;
+        nextDialogueButton.gameObject.SetActive(false);
         if (readTime < 1f / dialogueList[currentDialogue].charactersPerSecond) return;
         int characters = (int)(readTime * dialogueList[currentDialogue].charactersPerSecond);
         readTime = 0f;
         for (int i = 0; i < characters; i++)
         {
-            dialogueBox.text += dialogueList[currentDialogue].text[textIndex];
+            dialogueText.text += dialogueList[currentDialogue].text[textIndex];
             textIndex++;
             if (textIndex >= dialogueList[currentDialogue].text.Length) return;
         }
     }
     
-    public void NextDialogue()
+    void NextDialogue()
     {
-        dialogueBox.text = "";
-        tagBox.text = "(";
+        if (currentDialogue == dialogueList.Count - 1)
+        {
+            NextScene();
+            return;
+        }
+        dialogueText.text = "";
+        dialogueTags.text = "(";
         currentDialogue++;
         textIndex = 0;
         readTime = 0f;
-        dialogueBox.fontSize = dialogueList[currentDialogue].fontSize;
+        dialogueText.fontSize = dialogueList[currentDialogue].fontSize;
         if (dialogueList[currentDialogue].type == Dialogue.Type.Speaking)
         {
-            dialogueBox.fontStyle = FontStyles.Normal;
+            dialogueText.fontStyle = FontStyles.Normal;
         }
         else if (dialogueList[currentDialogue].type == Dialogue.Type.Action)
         {
-            dialogueBox.fontStyle = FontStyles.Italic;
+            dialogueText.fontStyle = FontStyles.Italic;
         }
-        backgroundImage.sprite = dialogueList[currentDialogue].backgroundImage?.sprite;
-        speakerImage.sprite = dialogueList[currentDialogue].speakerImage?.sprite;
-        speakerBox.text = dialogueList[currentDialogue].speaker;
-        Array.ForEach<string>(dialogueList[currentDialogue].tags.ToArray(), t => tagBox.text += $"{t}, ");
-        if (tagBox.text != "(")
+        backgroundImage.sprite = dialogueList[currentDialogue].backgroundImage;
+        speakerImage.sprite = dialogueList[currentDialogue].speakerImage;
+        speakerName.text = dialogueList[currentDialogue].speaker;
+        Array.ForEach<string>(dialogueList[currentDialogue].tags.ToArray(), t => dialogueTags.text += $"{t}, ");
+        if (dialogueTags.text != "(")
         {
-            tagBox.text = tagBox.text.Substring(0, tagBox.text.Length - 2);
-            tagBox.text += ")";
+            dialogueTags.text = dialogueTags.text.Substring(0, dialogueTags.text.Length - 2);
+            dialogueTags.text += ")";
         }
         else
         {
-            tagBox.text = "";
+            dialogueTags.text = "";
         }
+    }
+
+    void NextScene()
+    {
+        // Scene transition
     }
 }
