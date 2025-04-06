@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour
 {
     [SerializeField] private GameObject doorMesh;
     private bool doorOpen = false;
+    [SerializeField] private int SceneNumber;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,7 +19,7 @@ public class Door : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.E)) 
             {
-
+                SceneManager.LoadSceneAsync(SceneNumber);
             }
         }
     }

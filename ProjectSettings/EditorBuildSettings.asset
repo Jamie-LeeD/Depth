@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScene.unity
     guid: 0a2eb4f242caf1c4bb2ec1ac93b90174
   - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 317969c37c411984489f5adbe6a122f8
+  - enabled: 1
+    path: Assets/Scenes/InvisiblePath.unity
+    guid: 9a1f569959d69b141be335a3795895ef
+  - enabled: 1
+    path: Assets/Scenes/DoNothingMaize.unity
+    guid: ae9d231804db44e49a0c7e40cc968439
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:

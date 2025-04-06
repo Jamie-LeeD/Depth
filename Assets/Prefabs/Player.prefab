@@ -163,7 +163,7 @@ MonoBehaviour:
   groundDrag: 6
   airDrag: 2
   movementSpeed: 5
-  airMultiplier: 10
+  airMultiplier: 0.1
   jumpForce: 10
 --- !u!114 &3287666016522432784
 MonoBehaviour:
