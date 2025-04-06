@@ -22,6 +22,7 @@ public class DialogueManager : MonoBehaviour
         if (textIndex >= dialogueList[currentDialogue].text.Length) return;
         if (readTime < dialogueList[currentDialogue].charactersPerSecond) return;
         int characters = (int)(readTime / dialogueList[currentDialogue].charactersPerSecond);
+        readTime = 0f;
         for (int i = 0; i < characters; i++)
         {
             dialogueBox.text += dialogueList[currentDialogue].text[textIndex];
