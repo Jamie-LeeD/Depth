@@ -3,9 +3,7 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pausePanel;
-    public GameObject controlsPanel;
-    public GameObject SavePanel;
-    public GameObject LoadPanel;
+    public GameObject ControlPanel;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,35 +30,27 @@ public class PauseMenu : MonoBehaviour
 
     public void Pause()
     {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
         pausePanel.SetActive(true);
         Time.timeScale = 0f;
     }
 
     public void Continue()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         pausePanel.SetActive(false);
         Time.timeScale = 1f;
     }
 
-    public void Controls()
+    public void ControlBtn()
     {
-        Debug.Log("clicked");
-        controlsPanel.SetActive(true);
-        SavePanel.SetActive(false);
-        LoadPanel.SetActive(false);
+        ControlPanel.SetActive(true);
     }
 
-    public void SaveBtn()
+    public void XBtn()
     {
-        controlsPanel.SetActive(false);
-        SavePanel.SetActive(true);
-        LoadPanel.SetActive(false);
-    }
-
-    public void LoadBtn()
-    {
-        controlsPanel.SetActive(false);
-        SavePanel.SetActive(false);
-        LoadPanel.SetActive(true);
+        ControlPanel.SetActive(false);
     }
 }
