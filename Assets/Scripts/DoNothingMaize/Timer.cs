@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class Timer : MonoBehaviour
@@ -7,6 +8,8 @@ public class Timer : MonoBehaviour
 
     private float currentTimer = 0;
     [SerializeField] private float timerDuration = 10f;
+
+    public TextMeshProUGUI outputTime;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,7 +34,7 @@ public class Timer : MonoBehaviour
                 timerStart = false;
             }
         }
-
+        VisualUpdate();
     }
 
     private void ResetTimer()
@@ -39,5 +42,16 @@ public class Timer : MonoBehaviour
         currentTimer = 0;
         timerStart = true;
         timerEnd = false;
+    }
+
+    void VisualUpdate()
+    {
+        ConvertTimer();
+        outputTime.text = currentTimer.ToString();
+    }
+
+    public void ConvertTimer()
+    {
+        currentTimer = Mathf.Round(currentTimer * 1000.0f) * 0.001f;
     }
 }

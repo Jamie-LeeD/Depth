@@ -6,6 +6,7 @@ public class Door : MonoBehaviour
     [SerializeField] private GameObject doorMesh;
     private bool doorOpen = false;
     [SerializeField] private int SceneNumber;
+    [SerializeField] private bool animateDoor;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,13 +27,21 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        doorMesh.transform.Rotate(0, 90,0);
+        if(animateDoor) 
+        {
+            doorMesh.transform.Rotate(0, 90, 0);
+        }
+        
         doorOpen = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        doorMesh.transform.Rotate(0, -90, 0);
+        if(animateDoor) 
+        {
+            doorMesh.transform.Rotate(0, -90, 0);
+        }        
+        doorOpen = false;
     }
 
 

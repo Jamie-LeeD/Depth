@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScene.unity
     guid: 0a2eb4f242caf1c4bb2ec1ac93b90174
   - enabled: 1
+    path: Assets/Scenes/DialogueOne.unity
+    guid: 0ebe41e2ea19a504ab176ed988992f92
+  - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 317969c37c411984489f5adbe6a122f8
   - enabled: 1
