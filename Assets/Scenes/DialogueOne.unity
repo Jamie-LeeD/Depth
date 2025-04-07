@@ -690,9 +690,9 @@ MonoBehaviour:
   dialogueList:
   - title: Psychologist Line 1
     type: 0
-    backgroundImage: {fileID: 21300000, guid: 79e85c2edb26f6742a4697959caa97d5, type: 3}
+    backgroundImage: {fileID: 21300000, guid: 5fd9b71f967161d4f8db28fbf816869e, type: 3}
     speaker: PSYCHOLOGIST
-    speakerImage: {fileID: 21300000, guid: ea19c039363094a4598dcd881c89aae6, type: 3}
+    speakerImage: {fileID: 21300000, guid: 92a948f049128464eb43b786fd6355f0, type: 3}
     tags:
     - thinking out loud
     - hesitant
@@ -702,7 +702,7 @@ MonoBehaviour:
     fontSize: 18
   - title: Action 1
     type: 1
-    backgroundImage: {fileID: 21300000, guid: 79e85c2edb26f6742a4697959caa97d5, type: 3}
+    backgroundImage: {fileID: 21300000, guid: 5fd9b71f967161d4f8db28fbf816869e, type: 3}
     speaker: 
     speakerImage: {fileID: 21300000, guid: 44751ff65d7aa6a4e8924ccfd47332b9, type: 3}
     tags: []
@@ -711,9 +711,9 @@ MonoBehaviour:
     fontSize: 18
   - title: Patient Line 1
     type: 0
-    backgroundImage: {fileID: 21300000, guid: 79e85c2edb26f6742a4697959caa97d5, type: 3}
+    backgroundImage: {fileID: 21300000, guid: 5fd9b71f967161d4f8db28fbf816869e, type: 3}
     speaker: PATIENT
-    speakerImage: {fileID: 21300000, guid: 1c4fce8704d7f5149925c48ada60148b, type: 3}
+    speakerImage: {fileID: 21300000, guid: 229204de75e30f74d876c01a9bea7e76, type: 3}
     tags:
     - mocking
     - whispering
@@ -722,7 +722,7 @@ MonoBehaviour:
     fontSize: 18
   - title: Action 2
     type: 1
-    backgroundImage: {fileID: 21300000, guid: 79e85c2edb26f6742a4697959caa97d5, type: 3}
+    backgroundImage: {fileID: 21300000, guid: 5fd9b71f967161d4f8db28fbf816869e, type: 3}
     speaker: 
     speakerImage: {fileID: 21300000, guid: 44751ff65d7aa6a4e8924ccfd47332b9, type: 3}
     tags: []
@@ -732,9 +732,9 @@ MonoBehaviour:
     fontSize: 18
   - title: Psychologist Line 2
     type: 0
-    backgroundImage: {fileID: 21300000, guid: 79e85c2edb26f6742a4697959caa97d5, type: 3}
+    backgroundImage: {fileID: 21300000, guid: 5fd9b71f967161d4f8db28fbf816869e, type: 3}
     speaker: PSYCHOLOGIST
-    speakerImage: {fileID: 21300000, guid: ea19c039363094a4598dcd881c89aae6, type: 3}
+    speakerImage: {fileID: 21300000, guid: 92a948f049128464eb43b786fd6355f0, type: 3}
     tags:
     - soft
     - curious
@@ -743,7 +743,7 @@ MonoBehaviour:
     fontSize: 18
   - title: Action 3
     type: 1
-    backgroundImage: {fileID: 21300000, guid: 79e85c2edb26f6742a4697959caa97d5, type: 3}
+    backgroundImage: {fileID: 21300000, guid: 5fd9b71f967161d4f8db28fbf816869e, type: 3}
     speaker: 
     speakerImage: {fileID: 21300000, guid: 44751ff65d7aa6a4e8924ccfd47332b9, type: 3}
     tags: []
@@ -752,9 +752,9 @@ MonoBehaviour:
     fontSize: 18
   - title: Patient Line 2
     type: 0
-    backgroundImage: {fileID: 21300000, guid: 06ea16363450e70428ae92a8b29b67fe, type: 3}
+    backgroundImage: {fileID: 21300000, guid: 8dce21275d73a41478dbfd7f24b4c21c, type: 3}
     speaker: PATIENT
-    speakerImage: {fileID: 21300000, guid: 1c4fce8704d7f5149925c48ada60148b, type: 3}
+    speakerImage: {fileID: 21300000, guid: 229204de75e30f74d876c01a9bea7e76, type: 3}
     tags:
     - smiling
     - voice echoing unnaturally
@@ -763,7 +763,7 @@ MonoBehaviour:
     fontSize: 18
   - title: Action 4
     type: 1
-    backgroundImage: {fileID: 21300000, guid: 06ea16363450e70428ae92a8b29b67fe, type: 3}
+    backgroundImage: {fileID: 21300000, guid: 8dce21275d73a41478dbfd7f24b4c21c, type: 3}
     speaker: 
     speakerImage: {fileID: 21300000, guid: 44751ff65d7aa6a4e8924ccfd47332b9, type: 3}
     tags: []
@@ -772,9 +772,9 @@ MonoBehaviour:
     fontSize: 18
   - title: Patient Line 3
     type: 0
-    backgroundImage: {fileID: 21300000, guid: 06ea16363450e70428ae92a8b29b67fe, type: 3}
+    backgroundImage: {fileID: 21300000, guid: 8dce21275d73a41478dbfd7f24b4c21c, type: 3}
     speaker: PATIENT
-    speakerImage: {fileID: 21300000, guid: 1c4fce8704d7f5149925c48ada60148b, type: 3}
+    speakerImage: {fileID: 21300000, guid: 229204de75e30f74d876c01a9bea7e76, type: 3}
     tags:
     - whispering from everywhere
     - nowhere
@@ -783,7 +783,7 @@ MonoBehaviour:
     fontSize: 18
   - title: Action 5
     type: 1
-    backgroundImage: {fileID: 21300000, guid: a46895c29fd2f75438ed53453b7e596c, type: 3}
+    backgroundImage: {fileID: 21300000, guid: 4d360081f3b6b3b449141d7284c0dd18, type: 3}
     speaker: 
     speakerImage: {fileID: 21300000, guid: 44751ff65d7aa6a4e8924ccfd47332b9, type: 3}
     tags: []
@@ -793,7 +793,7 @@ MonoBehaviour:
     fontSize: 18
   - title: Action 6
     type: 1
-    backgroundImage: {fileID: 21300000, guid: a46895c29fd2f75438ed53453b7e596c, type: 3}
+    backgroundImage: {fileID: 21300000, guid: 4d360081f3b6b3b449141d7284c0dd18, type: 3}
     speaker: 
     speakerImage: {fileID: 21300000, guid: 44751ff65d7aa6a4e8924ccfd47332b9, type: 3}
     tags: []
@@ -803,7 +803,7 @@ MonoBehaviour:
     fontSize: 18
   - title: Action 7
     type: 1
-    backgroundImage: {fileID: 21300000, guid: a46895c29fd2f75438ed53453b7e596c, type: 3}
+    backgroundImage: {fileID: 21300000, guid: 4d360081f3b6b3b449141d7284c0dd18, type: 3}
     speaker: 
     speakerImage: {fileID: 21300000, guid: 44751ff65d7aa6a4e8924ccfd47332b9, type: 3}
     tags: []
@@ -812,7 +812,7 @@ MonoBehaviour:
     fontSize: 18
   - title: Action 8
     type: 1
-    backgroundImage: {fileID: 21300000, guid: a46895c29fd2f75438ed53453b7e596c, type: 3}
+    backgroundImage: {fileID: 21300000, guid: 4d360081f3b6b3b449141d7284c0dd18, type: 3}
     speaker: 
     speakerImage: {fileID: 21300000, guid: 44751ff65d7aa6a4e8924ccfd47332b9, type: 3}
     tags: []
