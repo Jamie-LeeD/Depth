@@ -6,7 +6,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource sfxSource;
 
     public AudioClip Background;
+    public AudioClip ButtonSound;
     public AudioClip[] footsteps;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,6 +29,10 @@ public class AudioManager : MonoBehaviour
         sfxSource.PlayOneShot(clip);
     }
 
+    public void PlayButton()
+    {
+        sfxSource.PlayOneShot(ButtonSound);
+    }
     public void PlayFootsteps()
     {
         PlaySFX(RandomizeSound(footsteps));

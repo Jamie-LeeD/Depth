@@ -45,6 +45,11 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
     public void ControlBtn()
     {
         ControlPanel.SetActive(true);

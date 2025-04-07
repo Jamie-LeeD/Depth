@@ -5,10 +5,12 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private GameObject MainMenuUI;
     [SerializeField] private GameObject OptionsUI;
+    [SerializeField] private GameObject ControlsUI;
 
     private void Start()
     {
         OptionsUI.SetActive(false);
+        ControlsUI.SetActive(false);
     }
     public void PlayGame()
     {
@@ -23,6 +25,7 @@ public class MainMenu : MonoBehaviour
     public void OptionsButton()
     {
         OptionsUI.SetActive(true);
+        ControlsUI.SetActive(false);
         MainMenuUI.SetActive(false);
     }
 
@@ -30,5 +33,15 @@ public class MainMenu : MonoBehaviour
     {
         OptionsUI.SetActive(false);
         MainMenuUI.SetActive(true);
+    }
+
+    public void XButton() 
+    {
+        ControlsUI.SetActive(false);
+    }
+
+    public void Controls()
+    {
+        ControlsUI.SetActive(true);
     }
 }

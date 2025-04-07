@@ -6,7 +6,8 @@ public class DeathUI : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
     }
 
     // Update is called once per frame
@@ -23,6 +24,6 @@ public class DeathUI : MonoBehaviour
 
     public void ExitGame()
     {
-        Debug.Log("Exit");
+        Application.Quit();
     }
 }
