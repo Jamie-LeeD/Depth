@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
@@ -29,7 +30,10 @@ public class HealthManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(isDead) 
+        {
+            SceneManager.LoadSceneAsync(6);
+        }
     }
 
     public void TakeDamage()

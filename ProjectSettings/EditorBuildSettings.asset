@@ -20,12 +20,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DoNothingMaize.unity
     guid: ae9d231804db44e49a0c7e40cc968439
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/BossLevel.unity
+    guid: ad0e9ab0d7fc4234f9e83fedd53b7dd3
   - enabled: 1
     path: Assets/Scenes/Dead.unity
     guid: eee6f97f56f8959449db864444929e1c
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
