@@ -46,10 +46,6 @@ public class HealthManager : MonoBehaviour
         {
             isDead = true;
         }
-        else
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
     }
 
     public void ResetHealth()
