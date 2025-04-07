@@ -8,6 +8,8 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField]
+    int nextScene;
+    [SerializeField]
     Button nextDialogueButton;
     [SerializeField]
     Image backgroundImage;
@@ -90,6 +92,6 @@ public class DialogueManager : MonoBehaviour
 
     void NextScene()
     {
-        SceneManager.LoadSceneAsync(2);
+        SceneManager.LoadSceneAsync(nextScene);
     }
 }
