@@ -1,7 +1,8 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BossFallOff : MonoBehaviour
-{
+{  
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,8 +15,8 @@ public class BossFallOff : MonoBehaviour
         
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Exited");
+        HealthManager.Instance.TakeDamage();
     }
 }
