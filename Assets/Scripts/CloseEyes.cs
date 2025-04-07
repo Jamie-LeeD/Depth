@@ -14,6 +14,8 @@ public class CloseEyes : MonoBehaviour
     List<Light> sceneLights = new List<Light>();
     [SerializeField]
     List<GameObject> invisibleObjects = new List<GameObject>();
+    [SerializeField]
+    List<GameObject> objectsToHide = new List<GameObject>();
 
     bool closed;
 
@@ -30,6 +32,7 @@ public class CloseEyes : MonoBehaviour
             eyelids.GetComponent<MeshRenderer>().material = closed ? eyelidsClosed : eyelidsOpened;
             Array.ForEach<Light>(sceneLights.ToArray(), l => l.gameObject.SetActive(!closed));
             Array.ForEach<GameObject>(invisibleObjects.ToArray(), o => o.SetActive(closed));
+            Array.ForEach<GameObject>(objectsToHide.ToArray(), o => o.SetActive(!closed));
         }
     }
 }
