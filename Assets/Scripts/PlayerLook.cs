@@ -17,7 +17,7 @@ public class PlayerLook : MonoBehaviour
     [Range(0f, 90f)]
     float maxXRotation;
 
-    const float MULTIPLIER = 2f;
+    const float MULTIPLIER = 5f;
 
     float yRotation;
     float xRotation;
