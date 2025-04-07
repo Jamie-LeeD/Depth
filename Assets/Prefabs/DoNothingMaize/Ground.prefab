@@ -934,6 +934,10 @@ PrefabInstance:
       value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 6535845338906363266, guid: 58550e0792cf8b541a0cf178b0775817, type: 3}
+      propertyPath: SceneNumber
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535845338906363266, guid: 58550e0792cf8b541a0cf178b0775817, type: 3}
       propertyPath: animateDoor
       value: 1
       objectReference: {fileID: 0}

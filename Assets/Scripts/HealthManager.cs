@@ -41,9 +41,14 @@ public class HealthManager : MonoBehaviour
         if(isDead) return;
 
         currentHealth--;
+        
         if (currentHealth <= 0) 
         {
             isDead = true;
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
