@@ -17,7 +17,7 @@ public class PlayerLook : MonoBehaviour
     [Range(0f, 90f)]
     float maxXRotation;
 
-    const float MULTIPLIER = 0.01f;
+    const float MULTIPLIER = 2f;
 
     float yRotation;
     float xRotation;
@@ -32,8 +32,8 @@ public class PlayerLook : MonoBehaviour
         float mouseX = Input.GetAxisRaw("Mouse X");
         float mouseY = Input.GetAxisRaw("Mouse Y");
 
-        yRotation += mouseX * sensX * MULTIPLIER;
-        xRotation -= mouseY * sensY * MULTIPLIER;
+        yRotation += mouseX * sensX * MULTIPLIER * Time.deltaTime;
+        xRotation -= mouseY * sensY * MULTIPLIER * Time.deltaTime;
         xRotation = Mathf.Clamp(xRotation, minXRotation, maxXRotation);
 
         cam.transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);

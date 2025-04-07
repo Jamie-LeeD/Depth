@@ -9,6 +9,8 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
         OptionsUI.SetActive(false);
         ControlsUI.SetActive(false);
     }
